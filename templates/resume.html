@@ -1,0 +1,92 @@
+{% extends "base.html" %}
+
+{% block title %}Resume - Pavan kumar Katineni{% endblock %}
+
+{% block content %}
+<div class="page-header">
+    <div class="container">
+        <h1>Resume</h1>
+        <p class="breadcrumb">Home &gt; Resume</p>
+    </div>
+</div>
+
+<section class="resume-section">
+    <div class="container resume-printable">
+        <div class="resume-header-grid">
+            <div>
+                <h2>Pavan kumar Katineni</h2>
+                <p>Sathupalli, Telangana, India</p>
+                <p>Phone: 9346044497 | Email: pavankateni@gmail.com</p>
+            </div>
+            <div class="resume-actions">
+                <a href="{{ url_for('download', filename='') }}" class="btn btn-secondary" style="visibility:hidden;">Download</a>
+            </div>
+        </div>
+
+        <div class="resume-block">
+            <h3>Summary</h3>
+            <p>To secure a challenging position in a reputable organization where I can utilize and further develop my technical skills, expand my knowledge, and contribute to the company's success.</p>
+        </div>
+
+        <div class="resume-block">
+            <h3>Education</h3>
+            <ul class="resume-list">
+                <li>
+                    <strong>B. Tech, Computer Science and Engineering</strong> — Mother Teresa Institute of Science and Technology, Sathupally (2022–2026)
+                    <br>Aggregate: 7.5
+                </li>
+                <li>
+                    <strong>Intermediate</strong> — Govt. Junior College (2020–2022)
+                    <br>Aggregate: 80.7%
+                </li>
+                <li>
+                    <strong>10th Class</strong> — ZPHS High School (2020)
+                    <br>Aggregate: 9.7 CGPA
+                </li>
+            </ul>
+        </div>
+
+        <div class="resume-block">
+            <h3>Technical Skills</h3>
+            <ul class="skills-list">
+                <li>Programming Languages: HTML, CSS, Python, C, Java</li>
+                <li>Database: SQL</li>
+            </ul>
+        </div>
+
+        <div class="resume-block">
+            <h3>Certifications</h3>
+            <ul class="resume-list">
+                <li>Udemy: Java Programming for Complete Beginners</li>
+                <li>Cisco Netacad: Essentials of C</li>
+                <li>Great Learning: Python</li>
+            </ul>
+        </div>
+
+        <div class="resume-block">
+            <h3>Projects</h3>
+            <div class="project-item">
+                <h4>Hotel Reservation and Cancellation Prediction</h4>
+                <p>This project uses machine learning algorithms to predict hotel booking cancellations before check-in. Key features such as lead time, deposit type, and customer behavior were analyzed. Models including Logistic Regression, Decision Tree, and Random Forest were used to improve operational efficiency and reduce revenue loss.</p>
+            </div>
+        </div>
+
+        <div class="resume-block">
+            <h3>Extra-curricular Activities</h3>
+            <ul class="resume-list">
+                <li>Participated in the Hackathon On Data Science-ML-AI-2024 on BRAIN O VISION</li>
+                <li>Participated in a Two Days Workshop on Advancements in Data Visualization Techniques</li>
+                <li>Participated in a Three Days Workshop on Data Science-ML-AI</li>
+            </ul>
+        </div>
+
+        <div class="resume-block">
+            <h3>Declaration</h3>
+            <p>I hereby declare that the above information is true and correct to the best of my knowledge and belief.</p>
+            <p>PLACE: Lingagudem</p>
+            <p><strong>Pavan kumar Katineni</strong></p>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
